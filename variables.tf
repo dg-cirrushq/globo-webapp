@@ -57,3 +57,7 @@ variable "tfe_organization" {
   description = "Name of the TF Organization"
 }
 
+variable "playbook_repository" {
+  type        = string
+  description = "Name of the PB Repository"
+}
