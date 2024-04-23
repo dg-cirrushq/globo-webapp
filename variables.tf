@@ -32,9 +32,9 @@ variable "instance_type" {
   default     = "t3.micro"
 }
 
-variable "api_key" {
+variable "api_key_secret_arn" {
   type        = string
-  description = "(Required) API key for web app to talk to SaaS platform."
+  description = "(Required) API key secret arn for web app to talk to SaaS platform."
 }
 
 # variable "public_subnets" {
@@ -60,4 +60,9 @@ variable "tfe_organization" {
 variable "playbook_repository" {
   type        = string
   description = "Name of the PB Repository"
+}
+
+variable "instance_profile_role" {
+  type        = string
+  description = "Name of the Instance Profile Role"
 }
